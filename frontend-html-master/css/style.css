@@ -33,6 +33,7 @@ body {
 .container {
   margin: 0 auto;
   width: 960px;
+  max-width: 100%;
 }
 
 .infos {
@@ -183,4 +184,40 @@ nav.active {
   margin-top: 7px;
   margin-left: -12px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 0 15px;
+  }
+  .infos {
+    flex-direction: column;
+  }
+  .bg-primary {
+    height: auto;
+  }
+  .infos div {
+    padding-bottom: 20px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .search {
+    width: 100%;
+  }
+  .search input {
+    width: 100%;
+  }
+  .menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .dropdown {
+    top: initial;
+    margin-left: -45px;
+    z-index: 9999;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
 }
